@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --branco:#FFF;
+    --brancoTransparente:rgba(255,255,255,0.3);
+    --preto:#000;
+    --preto2:rgba(0, 0, 0, 0.1);
+    --azul:#0046af;
+}
+

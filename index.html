@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+    <div class="containerPai">
+        <div class="containerInput">
+            <input type="text" placeholder="Pesquisar local..." id="input">
+            <img src="assets/imagens/search.png" alt="lupaPesquisa">
+        </div>
+        <div class="containerConteudoPrincipal">
+            <h1 id="cidade">Local</h1>
+            <div class="containerTempo">
+                <p id="ceu">Céu: Sem info</p>
+            </div>
+            <p id="temp">Sem info</p>
+            <p id="sensacaoTermica">Sensação Térmica: Sem info</p>
+        </div>
+        <div class="containerConteudoSecundario">
+            <div>
+                <p id="tempMax">Máxima: Sem info</p>
+                <p id="tempMin">Mínima: Sem info</p>
+            </div>
+            <div>
+                <p id="umidade">Umidade: Sem info</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
