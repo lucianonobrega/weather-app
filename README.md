@@ -31,9 +31,6 @@ https://weather-app-bay-two-bbnbyqcbiv.vercel.app/
 
 ## 📸 Preview
 
-> Adicione aqui um print do seu projeto
-> Exemplo:
->
 > ![Preview do projeto](assets/imagens/imagemProjeto.PNG)
 
 ---
