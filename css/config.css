@@ -7,9 +7,9 @@ html {
 
 :root {
     --branco:#FFF;
-    --brancoTransparente:rgba(255,255,255,0.3);
-    --preto:#000;
+    --brancoTransparente:rgba(255, 255, 255, 0.192);
+    --brancoTransparente2:rgba(255, 255, 255, 0.603);
+    --preto:#333333;
     --preto2:rgba(0, 0, 0, 0.1);
     --azul:#0046af;
 }
-

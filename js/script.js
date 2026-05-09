@@ -29,13 +29,13 @@ function buscarClima(nomeCidade) {
 }
 
 function atualizarTela(dados) {
-    console.log(dados);
+    console.log(dados); //Coloquei aqui só para poder observar o console caso algo estranho aconteça
 
     cidade.innerText = dados.name;
-    temp.innerText = `${dados.main.temp}°C`;
-    sensacao.innerText = `Sensação Térmica: ${dados.main.feels_like}°C`;
-    tempMin.innerText = `Mínima: ${dados.main.temp_min}°C`;
-    tempMax.innerText = `Máxima: ${dados.main.temp_max}°C`;
-    ceu.innerText = `Céu: ${dados.weather[0].description}`;
+    temp.innerText = `${Math.round(dados.main.temp)}°C`;
+    sensacao.innerText = `Sensação Térmica: ${Math.round(dados.main.feels_like)}°C`;
+    tempMin.innerText = `Mínima: ${Math.round(dados.main.temp_min)}°C`;
+    tempMax.innerText = `Máxima: ${Math.round(dados.main.temp_max)}°C`;
+    ceu.innerText = `${dados.weather[0].description}`;
     umidade.innerText = `Umidade: ${dados.main.humidity}%`;
 }
