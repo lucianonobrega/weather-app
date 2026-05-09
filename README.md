@@ -31,7 +31,7 @@ https://weather-app-bay-two-bbnbyqcbiv.vercel.app/
 
 ## 📸 Preview
 
-> ![Preview do projeto](assets/imagens/imagemProjeto.PNG)
+> ![Preview do projeto](assets/imagens/imagem-projeto.PNG)
 
 ---
 
