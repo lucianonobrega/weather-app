@@ -6,6 +6,7 @@ const tempMin = document.getElementById("tempMin");
 const tempMax = document.getElementById("tempMax");
 const ceu = document.getElementById("ceu");
 const umidade = document.getElementById("umidade");
+const iconeTempo = document.getElementById("iconeTempo");
 
 const appid = "0dbece72f691675949cf227685d41194";
 
@@ -32,10 +33,32 @@ function atualizarTela(dados) {
     console.log(dados); //Coloquei aqui só para poder observar o console caso algo estranho aconteça
 
     cidade.innerText = dados.name;
-    temp.innerText = `${Math.round(dados.main.temp)}°C`;
-    sensacao.innerText = `Sensação Térmica: ${Math.round(dados.main.feels_like)}°C`;
-    tempMin.innerText = `Mínima: ${Math.round(dados.main.temp_min)}°C`;
-    tempMax.innerText = `Máxima: ${Math.round(dados.main.temp_max)}°C`;
+    temp.innerText = `${Math.round(dados.main.temp)}°`;
+    sensacao.innerText = `Sensação Térmica: ${Math.round(dados.main.feels_like)}°`;
+    tempMin.innerText = `Mínima: ${Math.round(dados.main.temp_min)}°`;
+    tempMax.innerText = `Máxima: ${Math.round(dados.main.temp_max)}°`;
     ceu.innerText = `${dados.weather[0].description}`;
     umidade.innerText = `Umidade: ${dados.main.humidity}%`;
+
+    let info = dados.weather[0].description;
+
+    definirIcone(info);
 }
+
+function definirIcone(info) {
+    const iconeObjeto = {
+        "céu limpo": 'assets/imagens/icon-ceu-limpo.png',
+        "chuva": 'assets/imagens/icon-chuva.png',
+        "nublado": 'assets/imagens/icon-nublado.png',
+        "neve": 'assets/imagens/icon-neve.png',
+        "nuvens": 'assets/imagens/icon-parcialmente-nublado.png',
+        "trovoada": 'assets/imagens/icon-tempestade.png'
+    }
+
+    for(let chave in iconeObjeto) {
+        if(info.includes(chave)) {
+            iconeTempo.src = iconeObjeto[chave];
+            iconeTempo.style.display = "block";
+        };
+    };
+};
